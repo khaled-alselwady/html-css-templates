@@ -45,7 +45,8 @@ nav {
   margin: 0 15px;
 }
 
-.nav-user-icon img {
+.nav-user-icon img,
+.content-image-container img {
   width: 40px;
   border-radius: 50%;
   cursor: pointer;
@@ -129,7 +130,9 @@ nav {
   margin: 20px 15px;
 }
 
-.lift-sidebar .see-more-link {
+.lift-sidebar .see-more-link,
+.right-sidebar .sub-title a,
+.right-sidebar .event-details a {
   color: #0c71f5;
   cursor: pointer;
 }
@@ -152,4 +155,128 @@ nav {
   margin: 25px 0;
   color: #626262;
   font-weight: 500;
+}
+
+.right-sidebar {
+  background-color: #fbfbfb;
+  height: 100vh;
+  padding: 25px 20px;
+}
+
+.event-details-container {
+  display: flex;
+}
+
+.date-container {
+  margin-right: 15px;
+}
+
+.right-sidebar .sub-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-sidebar .sub-title p {
+  font-size: 17px;
+  color: #6b6b6b;
+  font-weight: 600;
+}
+
+.right-sidebar .sub-title a,
+.right-sidebar .event-details a {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.event-details-container .date-container {
+  height: 80px;
+  position: relative;
+}
+
+.event-details-container .day,
+.event-details-container .date-container .month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.116);
+}
+
+.event-details-container .day {
+  height: 55px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.event-details-container .date-container .month {
+  position: absolute;
+  bottom: 0;
+  background-color: #0c71f5;
+  color: white;
+  font-size: 13px;
+  height: 25px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.sub-title {
+  margin-bottom: 25px;
+}
+
+.event-details-container {
+  margin-bottom: 20px;
+}
+
+.event-details .event-name,
+.event-details .event-location-container {
+  margin-bottom: 8px;
+}
+
+.event-details img {
+  width: 12px;
+  margin-right: 6px;
+}
+
+.event-details .event-name {
+  font-size: 20px;
+}
+
+.event-details .event-location-name {
+  font-size: 15px;
+}
+
+.event-details .event-location-container,
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.advertisement-container,
+.conversation-container {
+  margin-top: 25px;
+}
+
+.advertisement-container img {
+  border-radius: 5px;
+  width: 450px;
+  object-fit: contain;
+}
+
+.content-name {
+  font-size: 17px;
+}
+
+.content-image-container {
+  margin-right: 15px;
+}
+
+.content-image-container::after {
+  top: auto;
+  bottom: 0;
+}
+
+.content {
+  margin-bottom: 20px;
 }
