@@ -252,3 +252,61 @@ nav {
   top: unset;
   bottom: 5px;
 }
+
+.image-story-container {
+  position: relative;
+  margin-right: 20px;
+}
+
+.status-image {
+  width: 120px;
+  border-radius: 9px;
+  object-fit: cover;
+}
+
+.upload-icon,
+.member-icon {
+  width: 40px;
+  position: absolute;
+  bottom: 55px;
+  left: 40px;
+  z-index: 500;
+  cursor: pointer;
+}
+
+.image-story-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 213px;
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 9px;
+  z-index: 1;
+  pointer-events: none; /* Ensure the overlay doesn't interfere with clicks */
+}
+
+.image-story-container p {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: white;
+  z-index: 501;
+  text-align: center;
+}
+
+.stories-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.member-icon {
+  border-radius: 50%;
+  border: 5px solid #0c71f5;
+  bottom: unset;
+  left: unset;
+  top: 10px;
+  left: 10px;
+}
