@@ -46,7 +46,8 @@ nav {
   margin: 0 15px;
 }
 
-.nav-user-icon img {
+.nav-user-icon img,
+.image-user-container img {
   width: 40px;
   border-radius: 50%;
   cursor: pointer;
@@ -309,4 +310,70 @@ nav {
   left: unset;
   top: 10px;
   left: 10px;
+}
+
+.write-post-container {
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  color: #626262;
+  border-radius: 6px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.user-info-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.image-user-container {
+  margin-right: 10px;
+}
+
+.privacy {
+  font-size: 12px;
+}
+
+.user-name {
+  margin-bottom: 5px;
+  flex-grow: 1;
+}
+
+.post-content-container {
+  flex: 1;
+}
+
+.content {
+  width: 100%;
+}
+
+.content textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+.options-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.options-container a img {
+  width: 20px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.options-container a {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  text-decoration: none;
+  color: #626262;
+  margin-right: 30px;
 }
