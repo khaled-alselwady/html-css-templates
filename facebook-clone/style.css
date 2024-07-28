@@ -254,9 +254,17 @@ nav {
   bottom: 5px;
 }
 
+.main-content {
+  margin: 0 10px 10px 10px;
+}
+
 .image-story-container {
   position: relative;
   margin-right: 20px;
+}
+
+.last-story {
+  margin-right: 0;
 }
 
 .status-image {
@@ -299,8 +307,9 @@ nav {
 
 .stories-container {
   display: flex;
+  width: 100%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .member-icon {
@@ -310,6 +319,18 @@ nav {
   left: unset;
   top: 10px;
   left: 10px;
+}
+
+.post-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-header-row .three-dot-options-icon {
+  font-size: 1.5rem;
+  color: #979797;
+  cursor: pointer;
 }
 
 .write-post-container {
@@ -330,6 +351,7 @@ nav {
 
 .image-user-container {
   margin-right: 10px;
+  margin-bottom: 25px;
 }
 
 .privacy {
@@ -376,4 +398,114 @@ nav {
   text-decoration: none;
   color: #626262;
   margin-right: 30px;
+}
+
+.post-container {
+  max-width: 800px; /* Adjust this value as needed */
+  margin: 20px auto; /* Center the post container and add top/bottom margin */
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  color: #626262;
+  word-wrap: break-word; /* Ensure long words break to avoid overflow */
+  overflow-wrap: break-word;
+}
+
+.post-container .image-user-container {
+  display: flex;
+  align-items: center;
+}
+
+.post-container .image-user-container img {
+  margin-right: 10px;
+}
+
+.post-container .image-user-container p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.post-content-text {
+  word-wrap: break-word; /* ensure long words break to avoid overflow */
+  overflow-wrap: break-word; /* similar to word-wrap, but more compatible */
+}
+
+.post-container .image-user-container span {
+  font-size: 0.8rem;
+  color: #8a8a8a;
+}
+
+.post-container .post-text {
+  color: #8a8a8a;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+.post-container .post-text span {
+  font-weight: bold;
+  color: rgb(92, 92, 92);
+  cursor: pointer;
+}
+
+.post-container .post-text a {
+  text-decoration: none;
+  color: #1876f2;
+}
+
+.post-container .post-image {
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.post-container .reactions,
+.post-container .reactions div,
+.post-container .user-image-options,
+.post-container .reaction-icons-container {
+  display: flex;
+  align-items: center;
+}
+
+.post-container .reactions div {
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.post-container .reactions img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.post-container .user-image-options img {
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 5px;
+}
+
+.post-container .reaction-icons-container {
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.load-more-button-container,
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.load-more-button-container button {
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #9a9a9a;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #6c6c6c;
 }
